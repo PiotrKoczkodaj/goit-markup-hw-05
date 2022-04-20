@@ -98,6 +98,8 @@ ul
   margin-left: 46px;
   margin-top: 32px;
   margin-bottom: 31px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 .first-nav-item-first-child
@@ -110,7 +112,9 @@ ul
     color: var(--main-color);
     margin-left: 93px;
     margin-top: 32px;
-    margin-bottom: 31px;   
+    margin-bottom: 31px;  
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-nav-item-first-child:hover
 {
@@ -141,6 +145,8 @@ ul
   margin-bottom: 31px;
   margin-right: 50px;
   display: flex;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .header-mail:hover {
@@ -164,6 +170,8 @@ ul
     margin-left: 0;
     margin-right: 0;
     display: flex;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-tel:hover 
 {
@@ -176,7 +184,25 @@ ul
 /*=======================================END OF HEADER==================================================*/
 
 /*=======================================MAIN CONTAINER=================================================*/
-
+.first-gallery-index-item-first-child
+{
+  margin-right: 0;
+  margin-left: 0;
+}
+.text-on-image
+{
+  background-color: red;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: 700;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  left: 15px;
+  top: 1427px;
+}
 .text-header {
 
   font-weight: 900;
