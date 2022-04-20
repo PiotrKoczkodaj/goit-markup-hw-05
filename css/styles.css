@@ -81,6 +81,7 @@ ul
 .first-nav 
 {
   display: flex;
+  position: relative;
   
 }
 .first-nav-portfolio
@@ -98,10 +99,23 @@ ul
   margin-left: 46px;
   margin-top: 32px;
   margin-bottom: 31px;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition-delay: 0s;
+ }
+.first-nav-item:active::after
+{
+position: absolute;
+content: "";
+display: block;
+height: 4px;
+width: 10px;
+top: 45px;
+border-radius: 2px;
+background-color: red;
 }
+
 .first-nav-item-first-child
 {
     font-weight: 500;
@@ -112,9 +126,10 @@ ul
     color: var(--main-color);
     margin-left: 93px;
     margin-top: 32px;
-    margin-bottom: 31px;  
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 31px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .first-nav-item-first-child:hover
 {
@@ -145,10 +160,13 @@ ul
   margin-bottom: 31px;
   margin-right: 50px;
   display: flex;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+ }
 
-}
+
 .header-mail:hover {
   color: var(--mark-color);
   fill: #2196f3;
@@ -170,8 +188,10 @@ ul
     margin-left: 0;
     margin-right: 0;
     display: flex;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
 }
 .header-tel:hover 
 {
@@ -184,24 +204,29 @@ ul
 /*=======================================END OF HEADER==================================================*/
 
 /*=======================================MAIN CONTAINER=================================================*/
+
 .first-gallery-index-item-first-child
 {
   margin-right: 0;
   margin-left: 0;
+  position: relative;
 }
 .text-on-image
 {
-  background-color: red;
+  background-color:rgba(47, 48, 58, 0.8);
   font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.03em;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
   font-weight: 700;
   width: 370px;
   height: 70px;
+  text-transform: uppercase;
   position: absolute;
-  left: 15px;
-  top: 1427px;
+  bottom: 4px;
 }
 .text-header {
 
@@ -349,6 +374,7 @@ ul
 {
   margin-left: 30px;
   margin-right: 0;
+  position: relative;
 }
  .container .third-header 
 { 
@@ -576,6 +602,10 @@ justify-content:center
   border-radius: 50%;
   margin-left: 0;
   margin-right: 0;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
 }
 .link-icon-workers:hover
 {
@@ -600,6 +630,7 @@ justify-content:center
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .link-icon-footer:focus
 {
@@ -890,7 +921,12 @@ margin-left: 24px;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  fill: var(--icons-fill); 
+  fill: var(--icons-fill);
+  transition-property: fill, border-color ;
+  transition-duration: 250ms;
+  transition-delay: 0s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .fourth-section-link:hover
 {
@@ -976,6 +1012,10 @@ fill: var(--mark-color);
   justify-content: center;
   align-items: center;
   margin-right: 10px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
 }
 .icons-footer-list-item:hover
 {
