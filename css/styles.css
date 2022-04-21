@@ -114,7 +114,6 @@ ul
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--main-color);
-    margin-left: 93px;
     margin-top: 32px;
     margin-bottom: 31px;
     transition-property: color;
@@ -582,6 +581,8 @@ justify-content:center
 .is-hidden
 {
 visibility: hidden;
+opacity: 0;
+pointer-events: none;
 }
 .backdrop
 {
@@ -607,10 +608,18 @@ z-index: 1;
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  display: flex;
   justify-content: flex-end;
+  display: flex;
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-delay: 0;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.is-hidden .modal
+{
+  transform:translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
+  opacity: 0; 
+}
 .close-btn
 {
   width: 30px;
@@ -622,7 +631,9 @@ z-index: 1;
   font-weight: 700;
   margin-right:8px;
   margin-top: 8px;
- 
+  transition-property: transform;
+  transform: scale(1);
+  transition-duration: 1250ms;
 }
 .button-item-first-child:hover
 {
