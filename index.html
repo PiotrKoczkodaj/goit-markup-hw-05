@@ -14,15 +14,24 @@
      
 </head>
 <body>
+    
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="close-btn"data-modal-close>x</button>  
+    </div>
+</div>
     <!--Header-->
     <header class="header-part">
         <div class="container">  
         <a class="logo" href="index.html" ><span class="logo-span">Web</span>Studio</a>
         <nav class="first-nav">
-<a class="first-nav-item-first-child" href="index.html">Agencja</a>
-<a class="first-nav-item"  href="portfolio.html">Portfolio</a>
-<a class="first-nav-item" href="#">Kontakt</a>
+            <ul class="list-header">
+<li class="first-nav-list-item active"><a class="first-nav-item-first-child" href="index.html">Agencja</a></li>
+<li><a class="first-nav-item"  href="portfolio.html">Portfolio</a></li>
+<li><a class="first-nav-item" href="#">Kontakt</a></li>
+</ul>
 </nav>
+
 
 <a class="header-mail" href="mailto:info@devstudio.com">
     <svg class="icon-envelope" width="20" height="16">
@@ -47,14 +56,14 @@
     <div class="container">
     <h1 class="text-header">EFEKTYWNE ROZWIĄZANIA<br>DLA WASZEGO BIZNESU</h1>
 
-<button class="button-top" type="button">Zamów usługe</button>
+<button class="button-top" type="button" data-modal-open >Zamów usługe</button>
+
 </div> 
 </div>
  <div class="second-block">
      <div class="container">
 
 <ul class="second-block-list">
-    
     
     <li class="second-block-list-item-first">
         <div class="lorem-icon-box">
@@ -408,5 +417,6 @@
         </ul>
 </div>
     </footer>
-
+<script src="./js/modal.js"></script>
 </body>
+</html>
